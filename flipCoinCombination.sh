@@ -1,1 +1,11 @@
-#WELCOME TO FLIPPING OF COIN TO CALCULATE PERCENTAGE OF SINGLET,DOUBLET AND TRIPLET
+#!/bin/bash -x
+
+flip=$((RANDOM%2))
+HEAD=1
+
+if [ $HEAD -eq $flip ]
+then
+	echo HEAD
+else
+	echo TAIL
+fi
